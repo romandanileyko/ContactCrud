@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - contactmanager@109.123.152.119">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="contactmanager">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="information_schema"/>
+    <table id="3" parent="1" name="CONTACTS"/>
+    <column id="4" parent="3" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="5" parent="3" name="firstname">
+      <data-type>varchar(30)|0</data-type>
+    </column>
+    <column id="6" parent="3" name="lastname">
+      <data-type>varchar(30)|0</data-type>
+    </column>
+    <column id="7" parent="3" name="telephone">
+      <data-type>varchar(15)|0</data-type>
+    </column>
+    <column id="8" parent="3" name="email">
+      <data-type>varchar(30)|0</data-type>
+    </column>
+    <column id="9" parent="3" name="created">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+  </database-model>
+</dataSource>
